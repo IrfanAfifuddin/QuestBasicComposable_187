@@ -97,8 +97,8 @@ fun TataletakRowColumn(modifier: Modifier) {
 }
 
 @Composable
-fun TataLetakBoxColumnRow(modifier: Modifier) {
-    val gambar = painterResource(id = R.drawable.notasibalok)
+fun TataletakBoxColumnRow(modifier: Modifier) {
+    val gambar = painterResource(id = R.drawable.kurtcobain)
     Column {
         Box(
             modifier = modifier
@@ -116,6 +116,7 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                     Text(text = "Col1_Row1_Komponen2")
                     Text(text = "Col1_Row1_Komponen3")
                 }
+
                 Row(
                     modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
@@ -124,33 +125,29 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                     Text(text = "Col1_Row2_Komponen2")
                     Text(text = "Col1_Row2_Komponen3")
                 }
-
-                Spacer(modifier = Modifier.height(height = 10.dp))
-
-                Box(
-                    modifier = modifier
-                        .fillMaxWidth()
-                        .height(height = 300.dp)
-                        .background(color = Color.Cyan),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Image(
-                        painter = gambar,
-                        contentDescription = null,
-                        contentScale = ContentScale.Fit
-                    )
-                    Text(
-                        text = "My Music",
-                        fontSize = 50.sp,
-                        color = Color.Red,
-                        fontWeight = FontWeight.Bold,
-                        fontFamily = FontFamily.Cursive,
-                        modifier = Modifier.align(
-                            alignment = Alignment.Center
-                        )
-                    )
-                }
             }
+        }
+
+        Spacer(modifier = Modifier.height(height = 10.dp))
+
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(height = 300.dp)
+                .background(color = Color.Cyan),
+            contentAlignment = Alignment.Center
+        ) {
+            Image(painter = gambar,
+                contentDescription = null,
+                contentScale = ContentScale.Fit)
+
+            Text(text = "SUICIDE",
+                fontSize = 50.sp,
+                color = Color.Red,
+                fontWeight = FontWeight.Bold,
+                fontFamily = FontFamily.Cursive,
+                modifier = Modifier.align(
+                    alignment = Alignment.Center))
         }
     }
 }
