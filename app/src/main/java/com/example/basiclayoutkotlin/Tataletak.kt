@@ -1,4 +1,5 @@
 package com.example.basiclayoutkotlin
 
-class Tataletak {
+fun TataletakColumn() {
+
 }
